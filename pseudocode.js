@@ -19,4 +19,4 @@ jQuery selector: https://www.w3schools.com/jquery/jquery_selectors.asp
 jQuery .click() method: https://www.w3schools.com/jquery/event_click.asp */
 
 
-            /*$("#Final").text("Tie game " + "Player score: " + player + " vs " + "Computer Score: " + computer); */
+   
