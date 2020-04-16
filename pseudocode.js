@@ -19,4 +19,17 @@ jQuery selector: https://www.w3schools.com/jquery/jquery_selectors.asp
 jQuery .click() method: https://www.w3schools.com/jquery/event_click.asp */
 //Switch statement in JS: https://www.w3schools.com/js/tryit.asp?filename=tryjs_switch*/
 
-   
+/*The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s). Basic syntax is: $(selector).action() A $ sign to define/access jQuery. A (selector) to "query (or find)" HTML elements. A jQuery action() to be performed on the element(s)*/
+
+/*text() method in jQuerry: 
+The text() method sets or returns the text content of the selected elements.
+
+When this method is used to return content, it returns the text content of all matched elements (HTML markup will be removed).
+
+When this method is used to set content, it overwrites the content of ALL matched elements.
+
+Tip: To set or return the innerHTML (text + HTML markup) of the selected elements, use the html() method.
+
+   */
+
+   /* Query $(document).ready() is a basic part of using jQuery. The jQuery document ready function executes when the DOM (Document Object Model) is completely loaded in the browser. jQuery document ready is used to initialize jQuery/JavaScript code after the DOM is ready, and is used most times when working with jQuery.*/

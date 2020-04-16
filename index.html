@@ -26,7 +26,11 @@
             <p id="E"></p>
       
         <script>
-          $(document).ready(function(){
+          /*the following function returns the randomDice and randomDice2 when the event listener .click is click.*/ 
+ 
+
+
+          $(document).ready(function(){                    
             let computer = 0
             let player = 0
             $("#Start").click(function(){
@@ -35,7 +39,10 @@
             let randomDice2 = Math.floor(Math.random() * 6) + 1;
             $("#Computer").text(randomDice2)
         
-        if(randomDice > randomDice2){
+        
+              /*the following block of codes finds the winner by comparing the two dice numbers.  By using the .text method the winner will be announced and the scores will be added up  */ 
+        
+            if(randomDice > randomDice2){   
             $("#Winner").text("Player win");
             player=player+1; 
             }
