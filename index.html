@@ -14,10 +14,12 @@
         <div class="parent_container">
             <h1> Welcome To The Exciting Game of Dice </h1>
             <h5>COMPUTER</h5>
-            <p> randomDice1</p> <p id="Computer"></p>
+            <!-- <p> randomDice1 </p>  -->
+            <h3 id="Computer"></h3>
             <hr color="black" size="3">
             <h5>PLAYER</h5>
-            <p> randomDice2</p> <p id="Player"></p>
+            <!-- <p> randomDice2</p>  -->
+            <h3 id="Player"></h3>
             <p id="Winner"></p>
             <p id="Final"></p>
 
@@ -50,15 +52,13 @@
             else if(player<computer)
             $("#Final").text("Player score: " + player + " vs " + "Computer Score: " + computer);
             else
-            $("#Final").text("tie game" + "player" + player  +"computer" + computer);
+            $("#Final").text("Tie game " + "Player score: " + player + " vs " + "Computer Score: " + computer);
             });
             });
       
       
           let E = document.getElementById("E").innerHTML = "Thanks for playing!!";
-          
-          
-          
+        
           
       </script>
         <!-- <script src="jquery-3.4.1.min.js"></script>   -->

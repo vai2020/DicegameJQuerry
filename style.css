@@ -19,7 +19,7 @@ body {
    
  }
   
-.Dice {
+.Computer  {
     display: inline-block;
     text-align: center;
  }
@@ -51,7 +51,12 @@ body {
   
  h3 {
     color: black;
-    font-size: 22px;
+    font-size: 26px;
+ }
+
+ #Final {
+    color: red;
+    font-size: 20px;
  }
   
   
