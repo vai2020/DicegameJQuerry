@@ -66,6 +66,10 @@ body {
      font-style: italic;
      font-weight: bold;
  }
+
+ #player {
+     float: right;
+ }
   
   
   
