@@ -19,6 +19,11 @@ body {
    
  }
   
+.Dice {
+    display: inline-block;
+    text-align: center;
+ }
+ 
  button {
     color: white;
     border: 3px;
@@ -27,17 +32,17 @@ body {
     border-radius: 18px;
  }
   
- h4 {
+ h5 {
     color: brown;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
  }
   
   
- #CScorebtn, #PScorebtn {
+ #Winner {
     color: darkviolet;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
  }
   
  #ans1, #ans2 {
@@ -46,7 +51,7 @@ body {
   
  h3 {
     color: black;
-    font-size: 28px;
+    font-size: 22px;
  }
   
   
