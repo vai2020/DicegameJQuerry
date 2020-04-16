@@ -1,0 +1,55 @@
+body {
+    background-color: lightskyblue;
+ }
+  
+ .parent_container{
+    text-align: center;
+ }
+  
+ h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+ }
+  
+ h2 {
+    color: red;
+    background-color:yellow;
+    font-size: 26px;
+   
+ }
+  
+ button {
+    color: white;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 18px;
+ }
+  
+ h4 {
+    color: brown;
+    font-size: 28px;
+    font-weight: bold;
+ }
+  
+  
+ #CScorebtn, #PScorebtn {
+    color: darkviolet;
+    font-weight: bold;
+    font-size: 22px;
+ }
+  
+ #ans1, #ans2 {
+    font-size: 30px;
+ }
+  
+ h3 {
+    color: black;
+    font-size: 28px;
+ }
+  
+  
+  
+  
+ 
