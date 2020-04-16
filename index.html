@@ -36,11 +36,11 @@
             let randomDice2 = Math.floor(Math.random() * 6) + 1;
             $("#Computer").text(randomDice2)
         
-        if(randomDice>randomDice2){
+        if(randomDice > randomDice2){
             $("#Winner").text("Player win");
             player=player+1; 
             }
-        else if(randomDice<randomDice2) {
+        else if(randomDice < randomDice2) {
             $("#Winner").text("Computer win");
             computer=computer+1;
             }
@@ -52,7 +52,7 @@
             else if(player < computer)
             $("#Final").text("Player score: " + player + " vs " + "Computer Score: " + computer);
             else
-            $("#Final").text("Tie game - " + "Player score: " + player + " vs " + "Computer Score: " + computer);
+            $("#Final").text("Tie game => " + "Player score: " + player + " vs " + "Computer Score: " + computer);
 
             });
             });
@@ -65,10 +65,10 @@
 
       <script>
           
-          let dice = "images";
+        let dice = "dimages";
         switch (dice) {
         case 1:
-         = document.getElementById("").innerHTML = "./images/Dice1.png;
+        = document.getElementById("").innerHTML = "./images/Dice1.png;
         break;
         case 2:
         day = = document.getElementById("").innerHTML = "./images/Dice2.png
@@ -84,6 +84,8 @@
         break;
         case  6:
         day = document.getElementById("").innerHTML = "./images/Dice6.png
+        default:
+        console.log(it's an error");
 } 
       </script>
         <!-- <script src="jquery-3.4.1.min.js"></script>   -->
