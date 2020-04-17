@@ -15,13 +15,7 @@ body {
  h2 {
     color: red;
     background-color:yellow;
-    font-size: 26px;
-   
- }
-  
-.Computer  {
-    display: inline-block;
-    text-align: center;
+    font-size: 26px; 
  }
  
  button {
@@ -38,14 +32,11 @@ body {
     font-weight: bold;
  }
   
-  
  #Winner {
     color: darkviolet;
     font-weight: bold;
     font-size: 18px;
  }
-  
- 
   
  h3 {
     color: black;
