@@ -1,6 +1,6 @@
 Dice-game (JQuerry version)
 
-Link to live site on github: https://github.com/vai2020/The_dice_game
+Link to live site on github: https://github.com/vai2020/DicegameJQuerry.git
 
 
 A two-player game between Computer and User
