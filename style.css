@@ -56,8 +56,11 @@ body {
      font-weight: bold;
  }
 
- 
-  
+ .diceImg {
+    width: 100px;
+    height: 100px;
+    color: red;
+ }
   
   
   

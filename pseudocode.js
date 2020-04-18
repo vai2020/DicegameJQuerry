@@ -32,4 +32,6 @@ Tip: To set or return the innerHTML (text + HTML markup) of the selected element
 
    */
 
-   /* Query $(document).ready() is a basic part of using jQuery. The jQuery document ready function executes when the DOM (Document Object Model) is completely loaded in the browser. jQuery document ready is used to initialize jQuery/JavaScript code after the DOM is ready, and is used most times when working with jQuery.*/
+   /* JQuery $(document).ready() is a basic part of using jQuery. The jQuery document ready function executes when the DOM (Document Object Model) is completely loaded in the browser. jQuery document ready is used to initialize jQuery/JavaScript code after the DOM is ready, and is used most times when working with jQuery.*/
+
+   

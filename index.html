@@ -13,10 +13,10 @@
     <body>
         <div class="parent_container">
             <h1> Welcome To The Exciting Game of Dice </h1>
-            <h5>COMPUTER</h5>
+            <h5>PLAYER</h5>
             <h3 id="Computer"></h3>
-            <!-- <hr color="black" size="3"> -->
-            <h5>PLAYER</h5> 
+            
+            <h5>COMPUTER</h5> 
             <h3 id="Player"></h3>
             
             <p id="Winner"></p>
@@ -26,6 +26,15 @@
             <p id="E"></p>
       
         <script>
+          
+            let dice1Img=`<img class="diceImg" src="./Images/Dice1.png" />`
+            let dice2Img=`<img class="diceImg" src="./Images/Dice2.png" />`
+            let dice3Img=`<img class="diceImg" src="./Images/Dice3.png" />`
+            let dice4Img=`<img class="diceImg" src="./Images/Dice4.png" />`
+            let dice5Img=`<img class="diceImg" src="./Images/Dice5.png" />`
+            let dice6Img=`<img class="diceImg" src="./Images/Dice6.png" />` 
+
+
           /*the following function returns the randomDice and randomDice2 when .click JQuerry method is implemented by clicking the Play button (#Start)*/ 
 
           $(document).ready(function(){                    
@@ -55,38 +64,58 @@
             if(player > computer)
             $("#Final").text("Player score: " + player + " vs " + "Computer score: " + computer);
             else if(player < computer)
-            $("#Final").text("Player score: " + player + " vs " + "Computer Score: " + computer);
+            $("#Final").text("Player score: " + player + " vs " + "Computer score: " + computer);
             else
-            $("#Final").text("Tie game => " + "Player score: " + player + " vs " + "Computer Score: " + computer);
+            $("#Final").text("Tie game => " + "Player score: " + player + " vs " + "Computer score: " + computer);
+      
+            let E = document.getElementById("E").innerHTML = "Thanks for playing!!";    
+            
+            switch (randomDice) { 
+            case 1:
+            document.getElementById("Computer").innerHTML=dice1Img;
+            break;
+            case 2:
+            document.getElementById("Computer").innerHTML=dice2Img;
+            break;
+            case 3:
+            document.getElementById("Computer").innerHTML=dice3Img;
+            break;
+            case 4:
+            document.getElementById("Computer").innerHTML=dice4Img;
+            break;
+            case 5:
+            document.getElementById("Computer").innerHTML=dice5Img;
+            break;
+            case 6:
+            document.getElementById("Computer").innerHTML=dice6Img;
+            // default:
+            // document.getElementById("Player").innerHTML = "  ";
+            } 
 
+            switch (randomDice2) { 
+            case 1:
+            document.getElementById("Player").innerHTML=dice1Img;
+            break;
+            case 2:
+            document.getElementById("Player").innerHTML=dice2Img;
+            break;
+            case 3:
+            document.getElementById("Player").innerHTML=dice3Img;
+            break;
+            case 4:
+            document.getElementById("Player").innerHTML=dice4Img;
+            break;
+            case 5:
+            document.getElementById("Player").innerHTML=dice5Img;
+            break;
+            case 6:
+            document.getElementById("Player").innerHTML=dice6Img;
+            // default:
+            // document.getElementById("Player").innerHTML = "  ";
+            } 
+    
             });
-            });
-      
-          let E = document.getElementById("E").innerHTML = "Thanks for playing!!";    
-        
-        /* Experiment with swith statement below to replace randomDice with images. Each case represents a dice image.  Not working yet.  When it's working, also need to add 6 images for randomDice 2. 
-      
-        switch (randomdice) { 
-        case 1:
-        document.getElementById("Player").src="./Images.Dice1.png";
-        break;
-        case 2:
-        document.getElementById("Player").src="./Images.Dice2.png";
-        break;
-        case 3:
-        document.getElementById("Player").src="./images.Dice3.png";
-        break;
-        case 4:
-        document.getElementById("Player").src="./images.Dice4.png";
-        break;
-        case 5:
-        document.getElementById("Player").src="./images.Dice5.png";
-        break;
-        case 6:
-        document.getElementById("Player").src="./images.Dice6.png";
-        // default:
-        // document.getElementById("Player").innerHTML = "  ";
-        } */ 
+        });
       </script>
         <!-- <script src="jquery-3.4.1.min.js"></script>   -->
         <!--library-->
