@@ -68,7 +68,9 @@
             else
             $("#Final").text("Tie game => " + "Player score: " + player + " vs " + "Computer score: " + computer);
       
-            let E = document.getElementById("E").innerHTML = "Thanks for playing!!";    
+            /* document.getElementById("E").innerHTML = "Thanks for playing. Roll again!";  Experiment: this one works the same as line 73 */
+            
+            let E = document.getElementById("E").innerHTML = "Thanks for playing!!";  
             
             switch (randomDice) { 
             case 1:
@@ -122,3 +124,5 @@
         <script src="defer"></script>
     </body>
     </html>
+
+   
