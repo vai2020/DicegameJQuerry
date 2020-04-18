@@ -14,10 +14,10 @@
         <div class="parent_container">
             <h1> Welcome To The Exciting Game of Dice </h1>
             <h5>PLAYER</h5>
-            <h3 id="Computer"></h3>
+            <h3 id="Player"></h3>
             
             <h5>COMPUTER</h5> 
-            <h3 id="Player"></h3>
+            <h3 id="Computer"></h3>
             
             <p id="Winner"></p>
             <p id="Final"></p>
@@ -26,20 +26,12 @@
             <p id="E"></p>
       
         <script>
-          
-            let dice1Img=`<img class="diceImg" src="./Images/Dice1.png" />`
-            let dice2Img=`<img class="diceImg" src="./Images/Dice2.png" />`
-            let dice3Img=`<img class="diceImg" src="./Images/Dice3.png" />`
-            let dice4Img=`<img class="diceImg" src="./Images/Dice4.png" />`
-            let dice5Img=`<img class="diceImg" src="./Images/Dice5.png" />`
-            let dice6Img=`<img class="diceImg" src="./Images/Dice6.png" />` 
-
 
           /*the following function returns the randomDice and randomDice2 when .click() JQuerry method is implemented by clicking the Play button (#Start)*/ 
 
           $(document).ready(function(){                    
-            let computer = 0
             let player = 0
+            let computer = 0  
             $("#Start").click(function(){
             let randomDice = Math.floor(Math.random() * 6) + 1;
             $("#Player").text(randomDice)
@@ -72,31 +64,16 @@
             
             let E = document.getElementById("E").innerHTML = "Thanks for playing!!";  
             
-            /* Use switch statement below to switch randomDice and randomDice2 with 6 dice images accordingly */
-            
-            switch (randomDice) { 
-            case 1:
-            document.getElementById("Computer").innerHTML=dice1Img;
-            break;
-            case 2:
-            document.getElementById("Computer").innerHTML=dice2Img;
-            break;
-            case 3:
-            document.getElementById("Computer").innerHTML=dice3Img;
-            break;
-            case 4:
-            document.getElementById("Computer").innerHTML=dice4Img;
-            break;
-            case 5:
-            document.getElementById("Computer").innerHTML=dice5Img;
-            break;
-            case 6:
-            document.getElementById("Computer").innerHTML=dice6Img;
-            // default:
-            // document.getElementById("Player").innerHTML = "  ";
-            } 
+            /* Create 6 variables below to store 6 dice images.  Use switch statements to switch randomDice and randomDice2 with 6 dice images accordingly */
 
-            switch (randomDice2) { 
+            let dice1Img=`<img class="diceImg" src="./Images/Dice1.png" />`
+            let dice2Img=`<img class="diceImg" src="./Images/Dice2.png" />`
+            let dice3Img=`<img class="diceImg" src="./Images/Dice3.png" />`
+            let dice4Img=`<img class="diceImg" src="./Images/Dice4.png" />`
+            let dice5Img=`<img class="diceImg" src="./Images/Dice5.png" />`
+            let dice6Img=`<img class="diceImg" src="./Images/Dice6.png" />` 
+    
+            switch (randomDice) { 
             case 1:
             document.getElementById("Player").innerHTML=dice1Img;
             break;
@@ -117,6 +94,28 @@
             // default:
             // document.getElementById("Player").innerHTML = "  ";
             } 
+
+            switch (randomDice2) { 
+              case 1:
+              document.getElementById("Computer").innerHTML=dice1Img;
+              break;
+              case 2:
+              document.getElementById("Computer").innerHTML=dice2Img;
+              break;
+              case 3:
+              document.getElementById("Computer").innerHTML=dice3Img;
+              break;
+              case 4:
+              document.getElementById("Computer").innerHTML=dice4Img;
+              break;
+              case 5:
+              document.getElementById("Computer").innerHTML=dice5Img;
+              break;
+              case 6:
+              document.getElementById("Computer").innerHTML=dice6Img;
+              // default:
+              // document.getElementById("Computer").innerHTML = "  ";
+              } 
     
             });
         });
