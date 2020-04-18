@@ -35,7 +35,7 @@
             let dice6Img=`<img class="diceImg" src="./Images/Dice6.png" />` 
 
 
-          /*the following function returns the randomDice and randomDice2 when .click JQuerry method is implemented by clicking the Play button (#Start)*/ 
+          /*the following function returns the randomDice and randomDice2 when .click() JQuerry method is implemented by clicking the Play button (#Start)*/ 
 
           $(document).ready(function(){                    
             let computer = 0
@@ -46,7 +46,7 @@
             let randomDice2 = Math.floor(Math.random() * 6) + 1;
             $("#Computer").text(randomDice2)
         
-              /*the following block of codes finds the winner by comparing the two dice numbers.  By using the .text method the winner will be displayed and the scores will add up.  If then else statements are used to compare if the Computer or the Player has a higher number and hence become the winner */ 
+              /*the following block of codes finds the winner by comparing the two dice numbers.  By using the .text() method the winner will be displayed.  Then the scores will add up by +1 to the player and computer respectively.  If then else statements are used to compare if the Computer or the Player has a higher number and hence become the winner */ 
         
             if(randomDice > randomDice2){   
             $("#Winner").text("Player win");
@@ -59,7 +59,7 @@
             else 
             $("#Winner").text("Tie game");
             
-            // the following block of codes used if then else statments and .text method to display the winnder and the scores//
+            // the following block of codes use if then else statments and .text() method to display the winner and the scores//
 
             if(player > computer)
             $("#Final").text("Player score: " + player + " vs " + "Computer score: " + computer);
@@ -71,6 +71,8 @@
             /* document.getElementById("E").innerHTML = "Thanks for playing. Roll again!";  Experiment: this one works the same as line 73 */
             
             let E = document.getElementById("E").innerHTML = "Thanks for playing!!";  
+            
+            /* Use switch statement below to switch randomDice and randomDice2 with 6 dice images accordingly */
             
             switch (randomDice) { 
             case 1:
